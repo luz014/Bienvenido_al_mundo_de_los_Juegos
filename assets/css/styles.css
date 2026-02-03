@@ -3,7 +3,7 @@ main {
 }
 
 .navbar-custom {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,13 +15,8 @@ main {
   min-height: 4rem;
 }
 
-.navbar-brand {
-  margin-right: 0;
-}
-
 .navbar-brand img {
   height: 4.5rem;
-  max-height: 100%;
   width: auto;
 }
 
@@ -34,49 +29,31 @@ main {
 
 .navbar-custom .navbar-nav .nav-link {
   font-size: 1.5rem;
-  padding: 0;
 }
 
 .initial-section {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   overflow: hidden;
 }
 
 .initial-section video {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   z-index: -1;
-}
-
-.initial-section .overlay {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #fff;
-  text-align: center;
 }
 
 .game-section,
 .character-section,
 .gallery-section {
   position: relative;
-  width: 100%;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
+  color: rgb(255, 255, 255);
 }
 
 .game-section::before,
@@ -84,54 +61,65 @@ main {
 .gallery-section::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   filter: blur(8px);
-  opacity: 0.6;
+  opacity: 1.5;
   z-index: -1;
 }
 
 .game-section::before {
-  background-image: url('../img/bg1.webp');
+  background-image: url("../img/bg1.webp");
 }
 
 .character-section::before {
-  background-image: url('../img/bg2.webp');
+  background-image: url("../img/bg2.webp");
 }
 
 .gallery-section::before {
-  background-image: url('../img/bg3.webp');
+  background-image: url("../img/bg3.webp");
 }
 
-.game-section .overlay,
-.character-section .overlay,
-.gallery-section .overlay {
-  position: relative;
-  z-index: 1;
+.overlay {
+  width: 100%;
   padding: 2rem;
 }
 
+.game-logo {
+  max-width: 300px;
+}
+
+.mc-box {
+  background-image: url('assets/img/cosa.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2.5rem;
+  max-width: 520px;
+
+  color: white;
+  text-align: left;
+}
+
+.mc-box p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: left;
+}
 
 @media (max-width: 62rem) {
+
   .navbar-collapse {
     position: fixed;
-    inset: 0;            
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.55);
+    inset: 0;
+    background: rgba(0,0,0,0.55);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    z-index: 1050;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     transform: translateY(-100%);
     transition: transform 0.3s ease;
   }
@@ -141,40 +129,9 @@ main {
   }
 
   .navbar-custom .navbar-nav {
-    display: flex;          
-    flex-direction: column;   
-    width: 100%;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0;    
-    margin-left: 0; 
-   }             
-
-  .navbar-custom .navbar-nav .nav-item {
-    width: 100%;
-  }
-
-  .navbar-custom .navbar-nav .nav-link {
-    padding: 1.5rem 0; 
-    font-size: 1.5rem;
-    text-align: center;
-    display: block;
-  }
-
-  .navbar-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .navbar-brand img {
-    height: 4.5rem;
-    width: auto;
-  }
-
-  .navbar-toggler {
-    z-index: 1100;
+    margin-left: 0;
   }
 
   .initial-section video {
@@ -182,8 +139,6 @@ main {
   }
 
   .initial-section {
-    background: url('../img/fondo_cel.webp') no-repeat center center / cover;
+    background: url("../img/fondo_cel.webp") no-repeat center / cover;
   }
-
 }
-

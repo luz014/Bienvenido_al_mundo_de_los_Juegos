@@ -1,75 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUndo de los juegos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Mundo de los juegos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-          <img src="assets/img/image.webp" alt="Maincra">
-    </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2">
-        <li class="nav-item">
-          <a class="nav-link" href="#game">Juego</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#character">Personaje</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#gallery">Galeria</a>
-        </li>
-      </ul>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/image.webp" alt="Minecraft">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#game">Juego</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#character">Personaje</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Galería</a>
+          </li>
+        </ul>
+      </div>
 
     </div>
-  </div>
   </nav>
 </header>
 
 <main>
 
   <section class="initial-section">
-    <video autoplay muted loop src="assets/video/bg.webm" type="video/webm">
-    
-    </video>
-    <div class="overlay">
-    </div>
+    <video autoplay muted loop src="assets/video/bg.webm"></video>
+    <div class="overlay"></div>
   </section>
 
-  <section id="game"  class="game-section">
+  <section id="game" class="game-section">
     <div class="overlay">
-      <h2>El Juego</h2>
-      <p>Descripción del maincra...</p>
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-md-4 d-flex justify-content-center">
+            <img src="assets/img/maincra.webp" class="img-fluid game-logo">
+          </div>
+
+            <div class="mc-box">
+              <p>
+                Minecraft es un videojuego sandbox donde los jugadores pueden explorar,
+                construir y crear libremente en un mundo formado por bloques.
+                Ofrece modos como Supervivencia y Creativo.
+                <br><br>
+                El juego permite el uso de mods y skins que personalizan la experiencia.
+                Gracias a su comunidad activa, Minecraft sigue siendo uno de los juegos
+                más populares del mundo.
+              </p>
+            </div>
+
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="character" class="character-section">
     <div class="overlay">
-      <h2>Personaje</h2>
-      <p>Información de Alice...</p>
+
+      <div class="col-md-4 d-flex justify-content-start">
+            <img src="assets/img/Alice.webp" class="img-fluid game-logo">
+          </div>
+
+      <p>Alice Liddell despierta en un mundo ajeno a toda razón, donde la oscuridad parece consciente 
+        y la niebla oculta verdades que no deberían ser conocidas. 
+        La fantasía se ha corrompido en algo antiguo y hostil. Con recursos 
+        escasos y una voluntad frágil pero persistente, Alice avanza sabiendo que sobrevivir 
+        no significa escapar, sino resistir lo suficiente para no ser reclamada por aquello que 
+        observa desde más allá del mundo.
+      </p>
     </div>
   </section>
 
   <section id="gallery" class="gallery-section">
     <div class="overlay">
       <h2>Galería</h2>
-      <p>Escenas</p>
+      <p>Escenas del juego</p>
     </div>
   </section>
 
 </main>
-<footer> Que ponemos aca? Hace hambre...</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<footer>
+  Que ponemos acá? Una buena polla :D
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
